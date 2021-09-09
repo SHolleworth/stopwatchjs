@@ -1,17 +1,72 @@
+h1, p {
+    font-family: 'SF Pro Text', 'SF Pro Display Ultralight', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 #container {
     width: '100%';
     height: '100%';
     background-color: #222;
 }
 
-#clock {
-    color: white;
-}
-
 #background {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 500px;
     height: 832px;
-    background-color: #000000;
+    background-color: #555;
+}
+
+#clockBox {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#clockBox h1 {
+    font-size: 7em;
+    color: white;
+}
+
+#buttonBox {
+    display: flex;
+    flex: .5;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.buttonBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: brown;
+}
+
+.buttonBackground p {
+    font-size: 1.3em;
+}
+
+#startButton {
+    background-color: darkgreen;
+}
+
+#startButton p {
+    color: lightgreen;
+}
+
+#resetButton {
+    background-color: grey;
+}
+
+#resetButton p {
+    color: lightgrey;
+}
+
+#lapBox {
+    flex: 1;
 }
